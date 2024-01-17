@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Application</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Welcome to the Social Media Application!</h1>
+    </section>
+
+    <section>
+      <h2>Latest Posts</h2>
+      <div class="post">
+        <h3>Post Title</h3>
+        <p>Post Content</p>
+      </div>
+      <div class="post">
+        <h3>Post Title</h3>
+        <p>Post Content</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Friends</h2>
+      <ul>
+        <li>Friend 1</li>
+        <li>Friend 2</li>
+        <li>Friend 3</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2021 Social Media Application. All rights reserved.</p>
+  </footer>
+</body>
+</html>

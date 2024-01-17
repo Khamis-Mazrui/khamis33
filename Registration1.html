@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Page Title</title>
+</head>
+   <style>
+   /* Container styling */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  overflow: hidden; /* Clear floats */
+
+  /* Optional: Add some padding or margin for spacing */
+  padding: 20px;
+}
+
+/* Left half (picture) */
+.picture {
+  width: 100%;
+  float: left; /* Float left to align to the left */
+}
+
+/* Right half (registration form) */
+.form {
+  width: 50%;
+  float: left; /* Float left to align to the right */
+}
+
+/* Optional: Adjust styling for better appearance */
+.picture img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Add some space between the left and right halves */
+.form {
+  padding-left: 20px;
+}
+
+   </style>
+<body>
+
+<div class="container">
+  <div class="picture">
+    <img src="registration.jpeg" alt="Your Image">
+  </div>
+  <div class="form">
+    <!-- Your registration form/admission form goes here -->
+    <form>
+	        <form action="process.php" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+      <!-- Form fields go here -->
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

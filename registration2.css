@@ -1,0 +1,127 @@
+    header {
+       background-color: #007ACC;
+       color: #fff;
+       padding: 10px;
+       text-align: center;
+        } 
+  
+    body,{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('registration.jpeg'); 
+      background-size: cover;
+      align-items:center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+	  text-align:center;
+    }
+	
+	   .background {
+          background: url('registration.jpeg') center/cover no-repeat; 
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+    .registration-container {
+      background: rgba(255, 255, 255, 0.8); /* Adjust the opacity and color as needed */
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .registration-container h2 {
+      text-align: center;
+    }
+
+    .registration-form {
+      display: inline;
+      flex-direction: column;
+	  grid-gap: 10px
+	  background-color:#FFF;
+      color:#007ACC;
+	  width:100%;
+    }
+
+    .registration-form label {
+      margin-bottom: 8px;
+    }
+
+    .registration-form input {
+      padding: 8px;
+      margin-bottom: 16px;
+	  padding: 8px;
+      margin-bottom: 10px;
+      align-items:vertical;
+      box-sizing: border-box;
+      width:100%;
+    }
+
+    .registration-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+     cursor: pointer;
+    }
+
+    .registration-form button:hover {
+      background-color: #45a049;
+    }
+	
+	.registration-submit button{
+		background-color: #45a049; 
+		color:#000;
+	}
+	  
+     button {
+      padding: 10px;
+      background-color#FFF;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+      button:hover {
+        background-color: #45a049;
+        }
+		
+		    
+		
+          nav {
+            background-color: #333;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+		
+				
+		   img {
+      display: block;
+      margin: 0 auto;
+      width: 8%;
+    }
+	
+	

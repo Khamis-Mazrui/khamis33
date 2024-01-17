@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007ACC;
+            color: #FFF;
+            text-align: center;
+            padding: 10px;
+        }
+		
+		     
+              h1 {
+                text-align: center;
+                color: #FFF;
+                 }
+
+        nav {
+            background-color: #333;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+		      
+		
+      button:hover {
+        background-color: #45a049;
+           }
+		      
+		
+		   button {
+            padding: 10px;
+            background-color: #FFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			}
+			
+			
+	      img {
+            display: block;
+            margin: 0 auto;
+            width: 8%;
+            } 
+			
+	   
+	     /* Style for the slideshow container */
+    .slideshow-container {
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+    }
+	
+  
+
+    /* Style for each slide */
+    .mySlides {
+      display: none;
+    }
+
+    /* Style for the navigation dots */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 100%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+	
+		
+	
+     </style>
+</head>
+<body> 
+       <div class="profile-picture-container">
+        <img src="profile-khamishigh.jpeg" alt="Profile Picture" class="profile-picture">
+    </div>
+       
+    <header>
+        <h1>Welcome to khamis School</h1>
+    </header>
+
+    <nav>
+       <button><a href="index.html">HOME</a></button>
+	   <button><a href="aboutschoolweb.html">ABOUT US</a></button>
+	   <button><a href="course.html">COURSES</a></button>
+	   <button><a href="Registration2.html">REGISTRATION</a></button>
+	   <button><a href="Admission1.html">ADMISSION</a></button>
+	   <button><a href="students-portal.html">STUDENTSPORTAL</a></button>
+	   <button><a href="Teachers-portal.html">TEACHERSPORTAL</a></button>
+	   <button><a href="contact us.html">CONTACT</a></button>
+	   
+    </nav>  
+
+<div class="slideshow-container">                   
+  <div class="mySlides">
+     <img src="khamishigh3.jpeg" style="width:100%" "height:100%">
+  </div>
+  
+  <div class="mySlides">
+    <img src="khamishigh.jpeg" style="width:100%" "height:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="khamishigh1.jpeg" style="width:100%" "height:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="khamishigh2.jpeg" style="width:100%" "height:100%">
+  </div>
+
+  <!-- Navigation dots -->
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+	<span class="dot"></span>
+  </div>
+</div>
+
+<script>
+  // JavaScript for slideshow functionality
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+    // Change slide every 2seconds (2000 milliseconds)
+    setTimeout(showSlides,2000 );
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#uploadsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uploadItem {
+    margin: 10px;
+}
+
+.uploadItem img, .uploadItem video {
+    max-width: 100%;
+    max-height: 200px;
+}

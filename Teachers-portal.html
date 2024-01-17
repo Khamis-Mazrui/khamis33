@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+			align:centre;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #FFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+		
+		  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			text-align:center;
+        }
+
+        header {
+            background-color: #007ACC;
+            color: #FFF;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+		
+		
+       button:hover {
+           background-color: #45a049;
+		}
+		
+		   img {
+      display: block;
+      margin: 0 auto;
+      width: 8%;
+    }
+       
+    </style>
+</head>
+       
+	     <div class="profile-picture-container">
+        <img src="profile-khamishigh.jpeg" alt="Profile Picture" class="profile-picture">
+    </div>
+	   
+          <header>
+	 <h1>Welcome to khamis School</h1>
+	</header>
+    <nav>
+       <button><a href="index.html">HOME</a></button>
+	   <button><a href="aboutschoolweb.html">ABOUT US</a></button>
+	   <button><a href="course.html">COURSES</a></button>
+	   <button><a href="Registration2.html">REGISTRATION</a></button>
+	   <button><a href="Admission1.html">ADMISSION</a></button>
+	   <button><a href="students-portal.html">STUDENTSPORTAL</a></button>
+	   <button><a href="Teachers-portal.html">TEACHERSPORTAL</a></button>
+	   <button><a href="CONTACT US.html">CONTACT US</a></button>
+	   
+    </nav>
+
+<body>
+
+   <header>
+    <h2>TEACHERS PORTAL</h2>
+	</header>
+	
+	<section>
+        <div class="Teachers-card">
+		    
+        <h1>PRINCIPAL</h1>
+		
+            <img class="Teachers-image" src="principal.jpeg" alt=" Teacher 1"  style="width:100%" "height:15%">
+            <p class="teachers-name">KASSIM KHAMIS</p>
+        </div>
+
+        <div class="Teachers-card">
+		    <header>
+        <h1>DEPUTY PRINCIPAL</h1>
+    </header>
+            <img class="Teachers-image" src="Deputy-principal.jpeg" alt="Teacher 2"  style="width:100%" "height:50%">
+            <p class="Teacher-name">John okello</p>
+        </div>
+		
+		  <div class="Teachers-card">
+		        <header>
+        <h1>DISCIPLINE MASTER</h1>
+    </header>
+            <img class="Teachers-image" src="disciplinemaster.jpeg" alt="Teacher 3"  style="width:100%" "height:100%">
+            <p class="teachers-name">Samuel kiokoto</p>
+        </div>
+		
+		   <div class="Teachers-card">
+		    <header>
+        <h1>SPORT TEACHER</h1>
+    </header>
+            <img class="Teachers-image" src="sport-teachers.jpeg" alt="Teacher 4"  style="width:100%" "height:100%">
+            <p class="teachers-name">Simba Abdallah</p>
+        </div> 
+		
+		  <div class="Teachers-card">
+		   <header>
+        <h1>TEACHERS</h1>
+    </header>
+            <img class="Teachers-image-image" src="teachers.jpeg" alt="Teacher 5" style="width:100%" "height:100%">
+            <p class="teachers-name">TEACHERS</p>
+        </div>
+		
+		 <div class="Teachers-card">
+		  <header>
+        <h1>TEACHERS</h1>
+    </header>
+            <img class="Teachers-image-image" src="teachers1.jpeg" alt="Teacher 6"  style="width:100%" "height:100%">
+            <p class="teacher-name">TEACHERS</p>
+        </div>
+		</section>
+
+    <form action="#" method="post" id="teacherForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select your subject</option>
+            <option value="math">Math</option>
+            <option value="science">Science><class="dropdown-btn"></option>
+			<option value="Chemistry">chemistry</option>
+			<option value="Phyisics">physics</option>
+			<option value="Biology">Biology</option>
+            <option value="english">English</option>
+			<option value="humanity">HUMANITY</option>
+			<option value="business">BUSINESS</option>
+			<option value="Geography">GEOGRAPHY</option>
+			<option value="I.R.E/C.R.E">I.R.E/C.R.E</option>
+			<option value="sports">SPORTS</option>
+            <!-- Add more subjects as needed -->
+        </select>
+
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+</body>
+</html>

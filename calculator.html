@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Calculator</h1>
+    </header>
+    <main>
+        <div id="calculator">
+            <input type="text" id="display" readonly>
+            <div id="buttons">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>/</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>*</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>-</button>
+                <button>0</button>
+                <button>.</button>
+                <button>+</button>
+                <button type="button" id="equals">=</button>
+                <button type="button" id="clear">C</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    <script src="scripts.js">
+	var buttons = document.querySelectorAll('button');
+var display = document.getElementById('display');
+var operator = '';
+var inputValue = '';
+var waitingForOperand = false;
+
+buttons.forEach(function (button) {
+    button.addEventListener('click', function (e) {
+        var buttonValue = e.target.innerText;
+        if (buttonValue === '+' || buttonValue === '-' || buttonValue === '*' || buttonValue === '/') {
+            operator = buttonValue;
+            inputValue += buttonValue;
+            waitingForOperand = true;
+        } else if (buttonValue === 'C') {
+            inputValue = '';
+            display.value = inputValue;
+            operator = '';
+            waitingForOperand = false;
+        } else if (buttonValue === '=') {
+            if (operator === '+') {
+                inputValue = parseFloat(inputValue) + parseFloat(operator);
+            } else if (operator === '-') {
+                inputValue = parseFloat(inputValue) -
+	</script>
+</body>
+</html>

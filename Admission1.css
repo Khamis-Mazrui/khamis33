@@ -1,0 +1,103 @@
+ header {
+       background-color: #007ACC;
+       color: #fff;
+       padding: 10px;
+       text-align: center;
+        }
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background: url('Admission.jpeg') center/cover no-repeat; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width:65%;
+  max-height:10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+form {
+  display: inline;
+  grid-gap: 10px;
+  background-color:#FFF;
+  color:#007ACC;
+  flex-direction: column;
+  width:100%;
+}
+
+label {
+  font-weight:bold;
+}
+
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  align-items:vertical;
+  box-sizing: border-box;
+  width:100%;
+}
+
+button {
+  padding: 10px;
+  background-color#FFF;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+  nav {
+            background-color: #333;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+		
+				
+		   img {
+      display: block;
+      margin: 0 auto;
+      width: 8%;
+    }
+	
+
+		

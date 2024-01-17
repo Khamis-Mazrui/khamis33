@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meme Reaction</title>
+    <link rel="stylesheet" type="text/css" href="meme.css">
+</head>
+<body>
+    <header>
+        <h1>Meme Reaction</h1>
+    </header>
+    <main>
+        <section id="meme-section">
+            <form id="meme-form">
+                <label for="caption">Caption:</label>
+                <input type="text" id="caption" name="caption" required>
+                <label for="meme-image">Upload a meme:</label>
+                <input type="file" id="meme-image" name="meme-image" accept="image/*" required>
+                <button type="submit">Post Meme</button>
+            </form>
+        </section>
+        <section id="reaction-section">
+            <h2>Post a reaction:</h2>
+            <form id="reaction-form">
+                <label for="reaction-caption">Reaction Caption:</label>
+                <input type="text" id="reaction-caption" name="reaction-caption" required>
+                <label for="reaction-image">Upload a reaction:</label>
+                <input type="file" id="reaction-image" name="reaction-image" accept="image/*" required>
+                <button type="submit">Post Reaction</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[about our school]</title>
+	         <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			text-align:center;
+        }
+
+        header {
+            background-color: #007ACC;
+            color: #FFF;
+            text-align: center;
+            padding: 10px;
+        }
+		
+               
+           h1 {
+        text-align: center;
+        color: #FFF;
+        }
+
+        nav {
+            background-color: #333;
+            color: #FFF;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+		
+		      	
+         button:hover {
+           background-color: #45a049;
+        }
+		
+		
+		    button {
+            padding: 10px;
+            background-color: #FFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+		
+		  	   
+	     /* Style for the slideshow container */
+    .slideshow-container {
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Style for each slide */
+    .mySlides {
+      display: none;
+    }
+
+    /* Style for the navigation dots */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 100%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    } 
+	
+	     img {
+      display: block;
+      margin: 0 auto;
+      width: 8%;
+    } 
+    </style>
+  
+    <link rel="stylesheet" href="styles.css">
+	  <button id="my button" class="my button"><a href="schoolweb.html"></button>
+</head>
+<body>
+     
+	   <div class="profile-picture-container">
+        <img src="profile-khamishigh.jpeg" alt="Profile Picture" class="profile-picture">
+    </div>
+ 
+   
+    <header>
+	 <h1>welcome to khamis school</h1>
+	 </header>
+	 <nav>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="aboutschoolweb.html">ABOUT US</a></button>
+        <button><a href="course.html">COURSES</a></button>
+		<button><a href="Registration2.html">REGISTRATION</a></button>
+	    <button><a href="Admission1.html">ADMISSION</a></button>
+		<button><a href="students-portal.html">STUDENTSPORTAL</a></button>
+		<button><a href="Teachers-portal.html">TEACHERSPORTAL</a></button>
+	    <button><a href="CONTACT US.html">CONTACT US</a></button>
+    </nav>
+	  </header>
+                <li><a href="courses.html">Courses</a></li>
+				<li>Mathematics</li>
+				<li>Sciences</li>
+				<li>Humanity</li>
+				<li>English</li>
+				<li>SPORTS</li>
+				<li>Bussiness studies</li>
+				<li>Geograpy</li>
+				<li>computer studies</li>
+        </nav>
+		    
+<div class="slideshow-container">
+  <!-- Slides -->  
+  <div class="mySlides">
+        <header>
+	 <h1>MATHEMATICS</h1>
+	 </header>
+    <img src="studentmaths.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <header>
+	 <h1>SCIENCE</h1>
+	 </header>
+    <img src="studentsScience.jpeg" style="width:100%">
+	<img src="physics-studies.jpeg" style="width:100%">
+	<img src="Biology-studies.jpeg" style="width:100%">
+  </div>
+  
+     <div class="mySlides">
+      <header>
+	 <h1>HUMANITY</h1>
+	 </header>
+    <img src="studentHumanity.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+       <header>
+	 <h1>ENGLISH</h1>
+	 </header>
+    <img src="studentEnglish.jpeg" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+        <header>
+	 <h1>SPORTS</h1>
+	 </header>
+    <img src="sport2.jpeg" style="width:100%">
+  </div>
+  
+   
+  <div class="mySlides">
+        <header>
+	 <h1>BUSINESS</h1>
+	 </header>
+    <img src="bussiness-studies.jpeg" style="width:100%">
+  </div>
+  
+  
+  <div class="mySlides">
+        <header>
+	 <h1>GEOGRAPHY</h1>
+	 </header>
+    <img src="Geography-studies.jpeg" style="width:100%">
+  </div>
+  
+     <div class="mySlides">
+      <header>
+	 <h1>computerstudies</h1>
+	 </header>
+     <img src="computerstudies.jpeg" style="width:100%">
+  </div>
+
+  <!-- Navigation dots -->
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+  </div>
+</div>
+
+<script>
+  // JavaScript for slideshow functionality
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+    // Change slide every 3 seconds (3000 milliseconds)
+    setTimeout(showSlides, 3000);
+  }
+</script>
+    <main>
+        <section id="welcome">
+            <h2>Welcome to [khamis highschool]</h2>
+            <p>Your source for quality education and growth.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 [khamis highschool]</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TALKCHAT</title>
+  <link rel="stylesheet" type="text/css" href="socialmedia.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+        
+    <header>
+        <h1>TALKCHAT</h1>
+    </header> 
+  <header>
+    <nav>
+        <button><a href="#">Home</a></button>
+        <button><a href="#">Profile</a></button>
+        <button><a href="#">Friends</a></button>
+        <button><a href="#">Messages</a></button>
+        <button><a href="#">Settings</a></button>
+    </nav>
+  </header>
+   
+   
+   <body>
+
+    <div id="post-form">
+        <h2>Create a Post</h2>
+        <textarea id="post-content" placeholder="Write your post (image/video URL)"></textarea>
+        <button onclick="submitPost()">Post</button>
+    </div>
+
+    <div id="feed">
+        <!-- Posts will be displayed here -->
+    </div>
+
+    <script>
+        function submitPost() {
+            const postContent = document.getElementById('post-content').value;
+            
+            if (postContent.trim() !== '') {
+                const postElement = document.createElement('div');
+                postElement.classList.add('post');
+                postElement.innerHTML = `
+                    <p>${postContent}</p>
+                    <div class="actions">
+                        <button onclick="likePost(this)">Like</button>
+                        <button onclick="followUser(this)">Follow</button>
+                        <button onclick="addComment(this)">Comment</button>
+                    </div>
+                `;
+                
+                document.getElementById('feed').appendChild(postElement);
+                
+                // Clear the input field after posting
+                document.getElementById('post-content').value = '';
+            }
+        }
+
+        function likePost(button) {
+            // Add your like functionality here
+            alert('Liked!');
+        }
+
+        function followUser(button) {
+            // Add your follow functionality here
+            alert('Followed!');
+        }
+
+        function addComment(button) {
+            // Add your comment functionality here
+            const comment = prompt('Enter your comment:');
+            if (comment !== null && comment.trim() !== '') {
+                alert('Comment added: ' + comment);
+            }
+        }
+    </script>
+  
+
+  <footer>
+    <p>&copy; 2021 TALKCHAT Application. All rights reserved.</p>
+  </footer>
+</body>
+</html>

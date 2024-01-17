@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+   <link rel="stylesheet" href="registration2.css">
+</head>
+
+           <div class="profile-picture-container">
+        <img src="profile-khamishigh.jpeg" alt="Profile Picture" class="profile-picture">
+    </div>
+	
+       <header>
+	 <h1>Welcome to khamis School</h1>
+	</header>
+       <nav>
+       <button><a href="index.html">HOME</a></button>
+	   <button><a href="aboutschoolweb.html">ABOUT US</a></button>
+	   <button><a href="course.html">COURSES</a></button>
+	   <button><a href="Registration2.html">REGISTRATION</a></button>
+	   <button><a href="Admission1.html">ADMISSION</a></button>
+	   <button><a href="students-portal.html">STUDENTSPORTAL</a></button>
+	   <button><a href="Teachers-portal.html">TEACHERSPORTAL</a></button>
+	   <button><a href="CONTACT US.html">CONTACT US</a></button>
+	   
+    </nav>
+
+<body>
+
+      <div class="background">
+   <div id="Image">
+    <img src="registration.jpeg" width="100%"  height="100%">
+  </div>  
+
+  <div class="registration-container">
+    <h2>Registration Form</h2>
+    <form class="registration-form" action="Registration2.html" method="post">
+	<table="1" align=center>
+	<tr>
+	  <td>
+      <label for="username">Username:</label></td>
+      <td><input type="text" id="username" name="username" required></td>
+	  </tr>
+	  
+	  <tr>
+	  <td>
+      <label for="email">Email:</label></td>
+      <td><input type="email" id="email" name="email" required></td>
+	  </tr>
+     
+	  <tr>
+	 <td>
+      <label for="password">Password:</label></td>
+      <td><input type="password" id="password" name="password" required></td>
+       </tr>
+	   
+      <td colspan="2" align="centre"><button type="submit" name="submit" >Register</button></td>
+	  </tr>
+	  </table>
+    </form>
+  </div>
+</body>
+</html>
+<?php
+include("includes/dbcon");
+
+?>
+<?php
+if(isset($_POST['submit'])){
+$username=$_POST['username'];
+$email=$_POST['email'];
+$password=$_POST['password'];
+$query="INSERT INTO `reg`(`username`, `email`, `password`) VALUES 
+('[$username]','[$email]','[$password]')";
+
+
+
+
+
+
+}
+
+
+
+
+
+?>
